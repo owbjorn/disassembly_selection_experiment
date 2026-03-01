@@ -1,5 +1,5 @@
 # Disassembly selection experiment
-This repository contains scripts used in a community breeding experiment to disassemble bacterial communities over several weeks. All code is written by Björn Vessman (Bjorn.Vessman@unil.ch). This project is described in more detail in our preprint [Arias-Sánchez et al., 2023](https://www.biorxiv.org/content/10.1101/2023.07.27.550627v1).
+This repository contains scripts used in a community breeding experiment to disassemble bacterial communities over several weeks. All code is written by Björn Vessman (@owbjorn). This project is described in more detail in our the paper [Arias-Sánchez et al., 2024, Nat Commun](https://doi.org/10.1038/s41467-024-52190-z).
 
 ## Table of contents
  - What are these files?
@@ -14,7 +14,7 @@ This repository contains scripts used in a community breeding experiment to disa
  - References
 
 ## What are these files?
-The selection experiment by Flor Arias-Sanchez, Sara Mitri, Alice Wallef Géraldine Alberti, Samuele Testa and Bjorn Vessman is performed by means of a method to artificially select and 'breed' bacterial communities for degradation of Metal-Working Fluids (experimental system presented in [1]). The selection method takes into account the COD scores measured in the previous week and suggests a community composition for next week, in order to increase substrate degradation and community cooperation. The scores are assumed to be found in an Excel file of a particular structure (see "__Input format__" below) and the method is implemented in python for easy automation and randomisation of the communities.
+The [selection experiment](https://doi.org/10.1038/s41467-024-52190-z) by Flor Arias-Sanchez, Sara Mitri, Alice Wallef, Géraldine Alberti, Samuele Testa and Bjorn Vessman is performed by means of a method to artificially select and 'breed' bacterial communities for degradation of Metal-Working Fluids. The experimental system is the same as introduced in [Piccardi et al 2019 PNAS](https://doi.org/10.1073/pnas.1906172116). The selection method takes into account the COD scores measured in the previous week and suggests a community composition for next week, in order to increase substrate degradation and community cooperation. The scores are assumed to be found in an Excel file of a particular structure (see "__Input format__" below) and the method is implemented in python for easy automation and randomisation of the communities.
 
 In this README, there is the occasional suggestion to run scripts. In these cases, the terminal is denoted as "$", so "$ python helloworld.py" means to open a terminal window and write "python helloworld.py" in order to run the script "helloworld.py" with the python interpreter.
 
@@ -115,7 +115,3 @@ The script reads COD and community composition from the 'master' file and marks 
 
 
 A minifile version of 'get_nextweek_Wednesday.py', using the COD minifile (also used on Monday, see section 3a1) and disassembly file with three sheets: Treatment 1, Treatment 2 and Survival. Each sheet contains 1s and 0s marking whether the species is present or absent in that tube.
-
-
-## References
-[1] Piccardi, Vessman, Mitri (2019) 'Toxicity drives facilitation between four bacterial species' PNAS
